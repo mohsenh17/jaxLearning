@@ -20,7 +20,6 @@ The script showcases the following key functionalities:
 - `numpy`
 - `torch`
 - `flax`
-- `ocp` (for checkpoint management)
 
 ## Key Components
 
@@ -28,6 +27,7 @@ The script showcases the following key functionalities:
 - **Training Step**: The `train_step` function computes the loss and performs backpropagation with gradients.
 - **Checkpointing**: The model’s state is saved and restored using the `PyTreeCheckpointer` from `orbax`. Special care is taken to restore the PRNG keys used in dropout layers.
 - **State Restoration**: The restored model is checked for consistency with the original state using `jax.tree.map(np.testing.assert_array_equal)`.
+- **Custom Metrics**: Accuracy, precision, recall, and f1_score can be used to meassure the predictions 
 
 ## Usage
 
@@ -39,6 +39,8 @@ The script showcases the following key functionalities:
    - Restore the model state from a checkpoint using `checkpointer.restore()`, ensuring the correct PRNG keys are restored for dropout layers.
 4. **Reinitialize Model**:
    - After restoration, the model can be reinitialized with the restored state using `nnx.merge()`.
+5. **Custom Metric**:
+   - Use accuracy, precision, recall, and F1 score to evaluate your predictions.
 
 ## Example
 
