@@ -13,7 +13,7 @@ First step:
   
   - Save based on eval dataset
     * Early stopping
-  - Custom metrics (a somewhat functional metric is in [riceTypes.ipynb](./flax/riceTypes.ipynb)) ✔
-      * the existing accuracy is argmax !!!  
+  - Custom metrics f1 score, precision, recall ([CustomMetrics.ipynb](./flax/CustomMetrics.ipynb)) ✔
+      * the existing accuracy is argmax !!! -> a custom accuracy added 
     
   - parallelize it with pmap
