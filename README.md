@@ -3,7 +3,7 @@ First step:
 
   - Learn jax and flax basics ✔
   
-[second steps](./flax/readme.md):
+[second steps](./flax/readme.md) ([flaxCheckpoint.ipynb](./flax/flaxCheckpoint.ipynb)):
 
   - Develop a simple flax model ✔
   
