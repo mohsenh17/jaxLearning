@@ -11,7 +11,7 @@ First step:
   
     * There is an issue with saving drop out related to rng dtype on orbax (change type before save and revert after load)
   
-  - Save based on eval dataset
+  - Save based on eval dataset ✔
     * Early stopping
   - Custom metrics f1 score, precision, recall ([CustomMetrics.ipynb](./flax/CustomMetrics.ipynb)) ✔
       * the existing accuracy is argmax !!! -> a custom accuracy added 
