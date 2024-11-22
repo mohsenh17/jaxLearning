@@ -14,6 +14,6 @@ First step:
   - Save based on eval dataset ✔
     * Early stopping
   - Custom metrics f1 score, precision, recall ([CustomMetrics.ipynb](./flax/CustomMetrics.ipynb)) ✔
-      * the existing accuracy is argmax !!! -> a custom accuracy added 
+      * the existing accuracy is argmax !!! -> a custom accuracy added  ✔
     
   - parallelize it with pmap
