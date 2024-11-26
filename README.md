@@ -18,3 +18,4 @@ First step:
     
   - parallelization
       * A simple MLP parallel (data:2, model:4) with sharding ([parallelMLP.ipynb](./flax/parallelMLP.ipynb)) ✔
+      * Load a sharded model from a checkpoint
