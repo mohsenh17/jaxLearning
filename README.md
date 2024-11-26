@@ -16,4 +16,5 @@ First step:
   - Custom metrics f1 score, precision, recall ([CustomMetrics.ipynb](./flax/CustomMetrics.ipynb)) ✔
       * the existing accuracy is argmax !!! -> a custom accuracy added  ✔
     
-  - parallelize it with pmap
+  - parallelization
+      * A simple MLP parallel (data:2, model:4) with sharding ([parallelMLP.ipynb](./flax/parallelMLP.ipynb)) ✔
